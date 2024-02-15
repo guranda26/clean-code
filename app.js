@@ -69,8 +69,8 @@ var editTask = function () {
   var editInput = listItem.querySelector("input[type=text]");
   var label = listItem.querySelector("label");
   var editBtn = listItem.querySelector(".edit");
-  var containsClass = listItem.classList.contains("edit-mode");
-  //If class of the parent is .edit-mode
+  var containsClass = listItem.classList.contains("todo-shopping");
+  //If class of the parent is .todo-shopping
   if (containsClass) {
     //switch to .edit-mpde
     //label becomes the inputs value.
@@ -80,8 +80,8 @@ var editTask = function () {
     editInput.value = label.innerText;
     editBtn.innerText = "Save";
   }
-  //toggle .edit-mode on the parent.
-  listItem.classList.toggle("edit-mode");
+  //toggle .etodo-shopping on the parent.
+  listItem.classList.toggle("todo-shopping");
 };
 
 //Delete task.
