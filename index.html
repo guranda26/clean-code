@@ -12,16 +12,16 @@
   </head>
   <body>
     <div class="container">
-      <header class="matrix">
+      <header class="header">
         <section>
           <img
             src="./eisenhower-matrix.jpg"
-            class="matrix-img"
+            class="header-img"
             alt="Eisenhower Matrix"
           />
-          <h1 class="heading">
+          <h1 class="page-heading">
             <a
-              class="details-info"
+              class="page-heading__link"
               href="https://goal-life.com/page/method/matrix-eisenhower"
             >
               Want more details?
@@ -30,14 +30,14 @@
         </section>
       </header>
       <main class="task-elements">
-        <section id="add-element">
+        <section class="task-elements__add">
           <label for="new-task" class="new-task">Add Item</label>
           <div class="task-wrapper">
             <input id="new-task" class="task-text task" type="text" />
-            <button class="btn">Add</button>
+            <button class="button">Add</button>
           </div>
         </section>
-        <section>
+        <section class="task-elements__todo">
           <h2 class="task-heading">Todo</h2>
           <ul id="incompleted-tasks">
             <li class="task-list">
@@ -48,8 +48,8 @@
                 class="task-text task"
                 aria-label="Edit Pay Bills"
               />
-              <button class="edit btn">Edit</button>
-              <button class="delete btn" aria-label="Delete task Pay Bills">
+              <button class="edit button">Edit</button>
+              <button class="delete button" aria-label="Delete task Pay Bills">
                 <img src="./remove.svg" class="remove" alt="Delete Icon" />
               </button>
             </li>
@@ -62,16 +62,19 @@
                 class="task-text task"
                 aria-label="Edit Go Shopping"
               />
-              <button class="edit btn" aria-label="Edit task Go Shopping">
+              <button class="edit button" aria-label="Edit task Go Shopping">
                 Save
               </button>
-              <button class="delete btn" aria-label="Delete task Go Shopping">
+              <button
+                class="delete button"
+                aria-label="Delete task Go Shopping"
+              >
                 <img src="./remove.svg" class="remove" alt="Delete Icon" />
               </button>
             </li>
           </ul>
         </section>
-        <section>
+        <section class="task-elements__complete">
           <h2 class="task-heading">Completed</h2>
           <ul id="completed-tasks">
             <li class="task-list">
@@ -84,8 +87,11 @@
                 class="task-text task"
                 aria-label="Edit See the Doctor"
               />
-              <button class="edit btn">Edit</button>
-              <button class="delete btn" aria-label="Edit task See the Doctor">
+              <button class="edit button">Edit</button>
+              <button
+                class="delete button"
+                aria-label="Edit task See the Doctor"
+              >
                 <img src="./remove.svg" class="remove" alt="Delete Icon" />
               </button>
             </li>

@@ -15,17 +15,21 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 //New task list item
 var createNewTaskElement = function (taskString) {
   var listItem = document.createElement("li");
+  listItem.classList.add("task-list");
   //input (checkbox)
   var checkBox = document.createElement("input"); //checkbx
+  checkBox.classList.add("checkbox");
   //label
   var label = document.createElement("label"); //label
   //input (text)
   var editInput = document.createElement("input"); //text
   //button.edit
+  editInput.classList.add("hidden");
   var editButton = document.createElement("button"); //edit button
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
   var deleteButtonImg = document.createElement("img"); //delete button image
+  deleteButtonImg.classList.add("remove");
   label.innerText = taskString;
   label.className = "task";
   //Each elements, needs appending
